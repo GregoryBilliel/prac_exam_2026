@@ -81,7 +81,9 @@ GGCGACATTACTGACCCGCNNNNNNNNNNNNNNNNNNNCGACNNNNNNNNNNNNNNNNNCCTGATNNNNNNNNNNNNNNN
 @SRR2584863.2 HWI-ST957:244:H73TDADXX:1:1101:8571:2191/2
 TCCCCGGAGTCAGCAGGGTGNNNNNNNNNNNNNNNNNATACATNNNNNNNNNNNNNNNGTTTTTGNNNNNNNNNNNNNNGCTGTCNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 ```
-grep -A1 --no-group-separator '@SRR' *.fastq | grep -B1 --no-group-separator 'NNNNNNNNNNNNNNN' > badreads.fasta
+grep -A1 --no-group-separator '@SRR' SRR2584863_2.fastq | grep -B1 --no-group-separator 'NNNNNNNNNNNNNNN' > badreads.fasta
+
+grep -A1 --no-group-separator '@SRR' SRR2584866_2.fastq | grep -B1 --no-group-separator 'NNNNNNNNNNNNNNN' >> badreads.fasta
 
 11. Activate the conda 'genomics' environment that contains `fastqc` and confirm where `fastqc` is installed. Paste the command and its output below. (2 points)
 
