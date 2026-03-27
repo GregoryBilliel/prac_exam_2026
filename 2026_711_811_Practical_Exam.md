@@ -123,5 +123,7 @@ Result of final my_md5sums.txt file:
 Gregory_Billiel 
 
 
-15. Push all of the new files that you created to your github repo using vscode's github side bar (4 points). 
+15. Push all of the new files that you created to your github repo using vscode's github side bar (4 points).
+
+Pushed Successfully
 ---
